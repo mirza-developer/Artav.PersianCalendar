@@ -1,15 +1,8 @@
-# Artav.PersianCalendar.dll 
+# Artav.PersianCalendar
 
 A Library for converting date & time , year calendar generate in Persian Calendar 
 Written in .net Framework 4.0
 
-## Installation
-
-Use nuget package manager to install.
-
-```nuget 
-Install-Package Artav.PersianCalendar.dll 
-```
 
 ## Usage
 1- Generate full year calendar by year number
