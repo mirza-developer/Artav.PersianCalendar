@@ -96,9 +96,9 @@ namespace Artav.PersianCalendar.Logic
             return returnVal;
         }
 
-        public static string GregorianMonthName(int PersianMonthNumber)
+        public static string GregorianMonthName(int gregorianMonthNumber)
         {
-            switch (PersianMonthNumber)
+            switch (gregorianMonthNumber)
             {
                 case 1:
                     return "January";
