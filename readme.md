@@ -33,7 +33,7 @@ PersianCalendarTools.GregorianDayName(DateTime date); // Returns a string like '
 PersianCalendarTools.GregorianDayName(int dayNumber); // Returns a string like 'Monday'
 
 // Get Gregorian Month name
-PersianCalendarTools.GregorianMonthName(int PersianMonthNumber); // Returns a string like 'January'
+PersianCalendarTools.GregorianMonthName(int gregorianMonthNumber); // Returns a string like 'January'
 PersianCalendarTools.GregorianMonthName(DateTime date); // Returns a string like 'January'
 
 // Get Persian day name
