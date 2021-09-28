@@ -96,6 +96,73 @@ namespace Artav.PersianCalendar.Logic
             return returnVal;
         }
 
+        public static string GregorianMonthName(int PersianMonthNumber)
+        {
+            switch (PersianMonthNumber)
+            {
+                case 1:
+                    return "January";
+                case 2:
+                    return "February";
+                case 3:
+                    return "March";
+                case 4:
+                    return "April";
+                case 5:
+                    return "May";
+                case 6:
+                    return "June";
+                case 7:
+                    return "July";
+                case 8:
+                    return "August";
+                case 9:
+                    return "September";
+                case 10:
+                    return "October";
+                case 11:
+                    return "November";
+                case 12:
+                    return "December";
+
+            }
+            return string.Empty;
+        }
+
+        public static string GregorianMonthName(DateTime date)
+        {
+            var monthNumber = int.Parse(GregorianToPersian(date).Split('/')[1]);
+            switch (monthNumber)
+            {
+                case 1:
+                    return "January";
+                case 2:
+                    return "February";
+                case 3:
+                    return "March";
+                case 4:
+                    return "April";
+                case 5:
+                    return "May";
+                case 6:
+                    return "June";
+                case 7:
+                    return "July";
+                case 8:
+                    return "August";
+                case 9:
+                    return "September";
+                case 10:
+                    return "October";
+                case 11:
+                    return "November";
+                case 12:
+                    return "December";
+
+            }
+            return string.Empty;
+        }
+
         public static string PersianDayName(DateTime date)
         {
             var pc = new System.Globalization.PersianCalendar();
@@ -238,6 +305,5 @@ namespace Artav.PersianCalendar.Logic
             var pc = new System.Globalization.PersianCalendar();
             return pc.IsLeapYear(PersianYearNumber);
         }
-
     }
 }
